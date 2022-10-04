@@ -1,0 +1,27 @@
+ internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Person P = new Person("angel", "locsin", 30);
+        }
+    }
+
+    internal class Person
+    {
+        public string firstname;
+       public string lastname;
+        public int age;
+
+
+
+        public Person(string firstname, string lastname, int age)
+        {
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.age = age;
+
+            Console.WriteLine(firstname + " " + lastname);
+            Console.WriteLine("you are" + age + "years old");
+        }
+    }
+}
