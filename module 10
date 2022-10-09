@@ -1,0 +1,49 @@
+exercise 1
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Circle myCircle = new Circle("black");
+            myCircle.SetRadius(5);
+            Console.WriteLine($"Circle:{myCircle.GetColor()}");
+            Console.WriteLine($"Radius:{myCircle.GetRadius()}");
+            Console.WriteLine($"area:{Math.Round(myCircle.Getarea(),2)}");
+            Console.WriteLine($"Circumference:{Math.Round(myCircle.Getperimeter(),2)}");
+            Console.ReadLine();
+        }
+        
+    }
+      class Circle
+    {
+        public int Radius;
+        public string colorname;
+
+    public Circle(string colorname)
+        {
+            this.colorname = colorname;
+        }
+        public void SetRadius(int r)
+        {
+          this.Radius = r;
+        }
+        public int GetRadius()
+        {
+            return this.Radius;
+        }
+        public string GetColor()
+        {
+            return this.colorname;
+        }
+        public double Getarea()
+        {
+            return Math.PI*Math.Pow( this.Radius,2);
+        }
+        public double Getperimeter()
+        {
+            return 2 * Math.PI* Radius;
+        }
+    }
+ 
