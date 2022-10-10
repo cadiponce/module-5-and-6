@@ -1,0 +1,36 @@
+internal class Program
+    {
+
+
+        static void Main(string[] args)
+        {
+            
+          Product p1 = new Product();
+            p1.NameProduct = "SOAP";
+            p1.ProductUnit = "BOX";
+            p1.ProductPrice = 17;
+            p1.Quantity = 62;
+            int ProductPrice = 17;
+            int Quantity = 62;
+            p1.Amount = Quantity * ProductPrice;
+
+
+            Console.WriteLine("Item:" + p1.NameProduct );
+            Console.WriteLine("Unit:" + p1.ProductUnit );
+            Console.WriteLine("Price:" + p1.ProductPrice  );
+            Console.WriteLine("Quantity:" + p1.Quantity  );
+            Console.WriteLine("Amount:" + (Quantity * ProductPrice));
+
+        }
+    }
+}
+class Product
+{
+    public string NameProduct;
+    public string ProductUnit;
+    public int Quantity;
+    public float ProductPrice;
+    public double Amount;
+
+
+}
