@@ -1,0 +1,156 @@
+ internal class Program
+    {
+        
+
+        static void Main(string[] args)
+        {
+            Person p = new Person();
+            p.Name = "adrian";
+            p.Sex = 'M';
+            p.address = "san pascual talavera nueva ecija";
+            p.PhoneNumber = 09873455611;
+            p.Email = "adrianlakasmagml@gmail.com";
+            p.Birthdate = "november 12 2000";
+            p.schoollastGraduated = "ateneo de tambayan university";
+            p.Course = "BSIT";
+            
+           
+          
+           
+            p.introduceSelf();
+
+
+            student S = new student();
+            S.Name = "CHRISTIAN MAR";
+           
+            S.Sex = 'M';
+            S.address = "sampaloc talavera nueva ecija";
+            S.PhoneNumber = 09873455611;
+            S.Email = "christiancancersaml@gmail.com";
+            S.Birthdate = "january 12 1886";
+            S.schoollastGraduated = "ateneo de tambayan university";
+            S.Course = "BSIT";
+            S.introduceSelf();
+
+               
+            
+            
+
+            faculty f = new faculty();
+
+
+            f.Name = "camille";
+            f.Sex = 'f';
+            f.address = "pulong san miguel talavera nueva ecija";
+            f.PhoneNumber = 09637263712;
+            f.Email = "camileohabam@gmail.com";
+            f.Birthdate = "December 01 1998";
+            f.designation = "assistant teacher";
+            f.Salary = 250000;
+            f.collegeDepartment = "cite";
+            f.subjectload = "math,science,p.e";
+            f.introduceSelf();
+
+
+            staff Sf = new staff();
+           
+            Sf.Name = "caizy";
+            Sf.Sex = 'f';
+            Sf.address = "campos talavera nuevaecija";
+            Sf.PhoneNumber = 09793452691;
+            Sf.Email = "caizyiyakin@gmail.com";
+            Sf.Birthdate = "August 05 2001";
+            Sf.designation = "admin assistant";
+            Sf.Salary = 21000;
+            Sf.serviceDepartment = "Dean's office";
+            Sf.introduceSelf();
+            
+            
+
+        }  
+        
+    }
+}
+class Person
+{
+    public string Name { get; set; }
+    public string address { get; set; }
+    public char Sex { get; set; }
+    public long PhoneNumber { get; set; }
+    
+    public string Email { get; set; }
+
+    public string Birthdate { get; set; }
+    public string schoollastGraduated { get; set; }
+    
+    public string Course { get; set; }
+
+    public float Salary { get; set; }
+
+    public string designation { get; set; }
+
+    public string collegeDepartment { get; set; }
+
+    public string subjectload { get; set; }
+
+    public string serviceDepartment { get; set; }
+   public void Faculty()
+    {
+        
+
+    }
+
+
+   public void introduceSelf()
+    {
+        
+        Console.WriteLine("Name:" + Name);
+        Console.WriteLine("Sex:" + Sex);
+        Console.WriteLine("address:" + address );
+        Console.WriteLine("phoneNumber:" + PhoneNumber);
+        Console.WriteLine("Email:"+ Email);
+        Console.WriteLine("birthdate:"+ Birthdate);
+        Console.WriteLine("Course:"+ Course);
+        Console.WriteLine("schoollastgraduated:" + schoollastGraduated);
+        Console.WriteLine("collegeDepartment:" + collegeDepartment);
+        Console.WriteLine("salary:" + Salary);
+        Console.WriteLine("designation:" + designation);
+        Console.WriteLine("service department:" + serviceDepartment);
+        Console.WriteLine("subjectload:" + subjectload);
+
+    }
+
+
+
+}
+
+
+class student:Person
+{
+
+    void IntroduceSelf()
+    {
+
+    
+    }
+
+
+
+}
+class faculty : Person
+{
+}
+class staff : Person
+    {
+    internal void introduceself()
+    {
+        
+    }
+
+    void Introduceself()
+    {
+
+       
+    }
+    }
+
